@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.cjk.myclock.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4083"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <TextView
+            android:layout_width="349dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="       Up Up!"
+            android:textColor="#3e4145"
+            android:background="#4083"
+            android:textSize="20dp" />
+
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#4083"
+            android:onClick="onClick"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="189dp"
+        android:layout_height="342dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/morning" />
+
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="#3e4145"
+        android:textSize="24dp" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#73b9a2"
+        android:onClick="setAlarmOne"
+        android:text="设 置 闹 钟"
+        android:textColor="#182424"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+            android:onClick="setAlarmCycle"
+            android:text="设置每日闹钟"
+            android:textSize="18dp"
+            android:textColor="#3e4145"
+            android:background="#4083"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cancelAlarmCycle"
+            android:text="取消每日闹钟"
+            android:textColor="#3e4145"
+            android:textSize="18dp"
+            android:background="#cde6c7"/>
+
+    </LinearLayout>
+
+</LinearLayout>
